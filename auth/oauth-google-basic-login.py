@@ -37,7 +37,7 @@ def process_auth():
         
         session['user_id'] = user['id'] #or generate a jwt.
 
-        return jsonify({'message': 'url received'})
+        return redirect("http://localhost:8000/dashboard.html") # Replace with your desired URL.
 
     except Exception as e:
         print(f"Exception {e}")
