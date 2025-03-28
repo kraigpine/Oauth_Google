@@ -12,22 +12,22 @@ pip install flask
 Navigate to the Google console, https://console.cloud.google.com/ and click on 'Apis & Services' <br />
 Create a project if you have not yet <br />
 Create an app if you have not yet <br />
-    - Give it a name, your email
-    - Select 'External'
-    - Give it your email as Contact
-    - Agree to terms
-    - Create App <br />
+- Give it a name, your email
+- Select 'External'
+- Give it your email as Contact
+- Agree to terms
+- Create App <br />
 In the left menu, click on "OAuth consent screen' <br />
 In the left menu, click on 'Clients' <br />
 Click 'Create Client' <br />
 For a web application, select 'Web application' in the drop down <br />
 Give it a name <br />
 For Authorized Javascript origins, add 3 uris: <br />
-    - http://localhost:5000
-    - http://localhost:8000
-    - http://localhost (it will give an error without this as a base) <br />
+- http://localhost:5000
+- http://localhost:8000
+- http://localhost (it will give an error without this as a base) <br />
 For Authorized redirect URI's, add 1 uri (this must match exactly to what you specify as the redirect in auth.html and oauth-google.py) <br />
-   -  http://localhost:5000/process-auth-google <br />
+   -  http://localhost:5000/process-auth-google 
 Click 'Create'  <br />
 Download the JSON file with your credentials <br />
 
