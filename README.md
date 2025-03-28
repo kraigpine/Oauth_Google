@@ -3,12 +3,12 @@ Code to implement Oauth on a front end website, python backend to exchange for a
 
 ## Theme: Knight-One, Bootstrap 5 theme
 
-## Current code on html page uses ajax, but feel free to eliminate jquery and use fetch
+### Current code on html page uses ajax, but feel free to eliminate jquery and use fetch
 
-## install pythons flask by running this in command prompt:
+## 1. Install pythons flask by running this in command prompt:
 pip install flask
 
-## Google console:
+## 2. Google console:
 Navigate to the Google console, https://console.cloud.google.com/ and click on 'Apis & Services' <br />
 Create a project if you have not yet <br />
 Create an app if you have not yet <br />
@@ -35,7 +35,7 @@ Click 'Create'  <br />
 Download the JSON file with your credentials <br />
 
 
-## For local testing, launch 1 python server in the local directory of the html file
+## 3. For local testing, launch 1 python server in the local directory of the html file
 In command prompt or terminal, navigate to the directory where the html file is and run:
 - python -m http.server <br />
 
@@ -46,7 +46,7 @@ In a second command prompt, navigate to where your python file is and run: <br /
 
 This will launch a web server with the port specified in app.run() command <br />
 
-## In a browser, load http://localhost:5000/auth-google.html
+## 4. In a browser, load http://localhost:5000/auth-google.html
 
 
 
