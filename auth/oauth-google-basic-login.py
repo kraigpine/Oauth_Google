@@ -41,4 +41,7 @@ def process_auth():
 
     except Exception as e:
         print(f"Exception {e}")
-        return jsonify({'error': 'Invalid token'}), 401        
+        return jsonify({'error': 'Invalid token'}), 401     
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)  
