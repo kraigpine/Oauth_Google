@@ -7,8 +7,8 @@ from flask_cors import CORS # Import CORS
 app = Flask(__name__)
 CORS(app)
 
-app.secret_key = 'Do not share this with anyone' #very important to change this.
-CLIENT_ID = ''
+app.secret_key = 'YOUR CLIENT SECRETE' #very important to change this.
+CLIENT_ID = 'YOUR CLIENT ID'
 
   
 @app.route('/process-auth-google', methods=['POST'])
@@ -20,6 +20,7 @@ def process_auth():
         g_csrf_token = request.form['g_csrf_token']
         
         print(f"token: {token}")
+        print(f"-----")
         print(f"g_csrf_token: {g_csrf_token}")
         
         idinfo = id_token.verify_oauth2_token(token, requests.Request(), CLIENT_ID)
