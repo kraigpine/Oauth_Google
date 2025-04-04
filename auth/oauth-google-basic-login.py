@@ -35,7 +35,7 @@ def process_auth():
         
         # create user if they don't exist
         
-        # session['user_id'] = user['id'] #or generate a jwt. 
+        # session['user_id'] = user['id'] #or generate a jwt. # !! Do NOT store jwts client side !!
 
         return redirect("http://localhost:8000/dashboard.html") # Replace with your desired URL.
 
