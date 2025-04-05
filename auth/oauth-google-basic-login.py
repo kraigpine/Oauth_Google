@@ -1,5 +1,5 @@
 from flask import Flask, request, redirect, jsonify, session
-from google.oauth2 import id_token
+from google.oauth2 import id_token # OpenID Connect
 from google.auth.transport import requests
 import json
 from flask_cors import CORS # Import CORS
